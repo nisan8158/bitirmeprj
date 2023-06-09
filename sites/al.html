@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veriye Göre Yönlendirme</title>
+</head>
+<body>
+    <label for="data">Veri:</label>
+    <input type="text" id="data" name="data">
+    <button onclick="redirectToPage()">Sayfaya Git</button>
+
+    <script>
+        function redirectToPage() {
+            var data = document.getElementById("data").value; // Kullanıcının girdiği veriyi al
+
+            // Veriye göre yönlendirme yap
+            if (data === "sayfa1") {
+                window.location.href = "sayfa1.html";
+            } else if (data === "sayfa2") {
+                window.location.href = "sayfa2.html";
+            } else if (data === "sayfa3") {
+                window.location.href = "sayfa3.html";
+            } else {
+                alert("Geçersiz veri! Lütfen doğru bir veri girin.");
+            }
+        }
+    </script>
+</body>
+</html>

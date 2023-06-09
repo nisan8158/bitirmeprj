@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anket</title>
+  <style>
+    
+    label {
+      display:list-item;
+      margin-bottom: 13px;
+      font-size:x-large
+    }
+    
+    p {
+        font-size: large; 
+    }
+
+    h2{
+        font-size:40px;
+        color: hsl(193, 46%, 65%);
+        
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 280px;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 12px 20px;
+      background-color: #1a8561;
+      color: white;
+      border: none;
+      cursor: move;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0c8f9b;
+      }
+
+    input[type="reset"]:hover {
+        background-color: #034e55;
+      }
+    
+      
+    .form-actions {
+        display:block;
+        justify-content: space-between;
+        align-items: center;
+      }
+       /*header bölümü geliyor*/
+      header {
+        color: #fbfbfb;
+        padding: 20px;
+        text-align: center;
+        border: 5px solid hsla(233, 95%, 23%, 0.878);
+        text-align: center;
+        /* Gölgelik eklemek için */
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        border-radius: 8px;
+        background-color: #19919cd6;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+       
+       
+    }
+    .navbar a:hover {
+      background-color: #fcfdfd67;
+      color: rgb(236, 237, 237);
+      border-radius: 10px;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .navbar li:not(:last-child)::after {
+      content: " | ";
+      font-size: xx-large;
+      color: #868686;
+    }
+    .navbar a {
+        color: #07f3cc;
+        text-decoration: none;
+        font-size:xx-large;
+    }
+    body {
+      background-color: hsla(20, 7%, 18%, 0.872);
+  }
+   /*aa*/
+   #ikinci{
+    color: #fbfbfb;
+    padding: 8px;
+    text-align: center;
+    border: 3px solid hsla(177, 93%, 39%, 0.756);
+    text-align: center;
+    /* Gölgelik eklemek için */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: #cd70d4c6;
+}
+
+.links-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+   
+}
+.links-container a:hover {
+  background-color: #58585844;
+  color: rgb(142, 51, 52);
+}
+
+.links-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links-container li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.links-container li:not(:last-child)::after {
+  content: " | ";
+  font-size: xx-large;
+  color: #575757;
+}
+.links-container a {
+    color: #07b4f3c6;
+    text-decoration: none;
+    font-size:xx-large;
+}
+  </style>
+</head>
+<body>
+  <header id="birinci">
+    <div class="navbar">
+        <ul>
+            <li><a href="ana.html">Ana Sayfa</a></li>
+            <li><a href="hakkımızda.html">Hakkımızda</a></li>
+            <li><a href="kaynakça.html">Kaynakça</a></li>
+            <li><a href="iletişim.html">İletişim</a></li>
+        </ul>
+    </div>
+        <h1>Çok Gezen Mi Çok Okuyan Mı Bilir?</h1> 
+  
+</header>
+
+<header id="ikinci">
+    <div class="links-container">
+    <ul>
+        <li><a href="ülke-analizi.html" ><strong>Ülke Analizi</strong></a></li>
+        <li><a href="dünya-tarihi.html" ><strong>Dünya Tarihi</strong></a></li>
+        <li><a href="ekonomi.html" ><strong>Ekonomi</strong></a></li>
+        <li><a href="felsefe.html" ><strong>Felsefe</strong></a></li>
+        <li><a href="psikoloji.html" ><strong>Psikoloji</strong></a></li>
+    </ul>
+    </div>
+</header>
+  <h2>Kullanıcı Anketi</h2>
+  <p>Kitlemizi daha iyi tanıyabilmek ve onlar hakkında edindiğimiz bilgiler ile her kitleye uygun, daha fazla içerik çıkartmaya çalışacağız. Sizlere daha iyi içerikler sunabilmemiz için 1 dakikanızı almayacak bu anketi doldurmanızı rica ediyoruz.</p>
+  <br>
+  <form>
+    <label for="dob">Doğum Tarihiniz:</label>
+    <input type="number" id="dob" name="dob" placeholder="GG.AA.YYYY" required>
+
+    <label for="location">Yaşadığınız Şehir:</label>
+    <input type="text" id="location" name="location" placeholder="Yaşadığı Yer | Şehir " required>
+  
+
+    <label for="education">Eğitim Kademeniz | Durumunuz:</label>
+    <select id="education" name="education" required>
+      <option value="">Seçiniz</option>
+      <option value="ilkokul">İlkokul</option>
+      <option value="ortaokul">Ortaokul</option>
+      <option value="lise">Lise</option>
+      <option value="üniversite">Üniversite</option>
+      <option value="mezun">Mezun</option>
+    </select>
+   
+  
+    <label for="research">Araştırmacılığınızı Değerlendirin:</label>
+    <select id="research" name="research" required>
+      <option value="">Seçiniz</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <div class="form-actions">
+        <input type="reset" value="Sıfırla">
+        <input type="submit" value="Gönder">
+    </div>
+    </div> 
+</form>
+</body>
+</html>
+

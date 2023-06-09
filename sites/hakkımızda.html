@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında</title>
+    <style>
+        h1{
+            font-size: xx-large;
+            background-color: rgba(167, 111, 219, 0.963);
+            color: rgb(242, 244, 246);
+            border-radius: 5px;
+            border-style: double ;
+            margin: 20px;
+            padding: 8px;
+            text-align: center;
+        }
+
+        body{
+            background-color: rgb(226, 196, 160);
+        }
+        h2{
+            background-color: aquamarine;
+            border-radius: 6px;
+            border-style:double;
+        }
+        li{
+            content: " | ";
+            font-size: xx-large;
+            color: #f93e3ed7;
+          }
+          img {
+            width: 300px;
+            height:auto;
+            margin: 20px;
+          }
+          p {
+            color: white;
+            font-size:x-large;
+          }
+         /*header bölümü geliyor*/
+       #birinci{
+        color: #fbfbfb;
+        padding: 8px;
+        text-align: center;
+        border: 5px solid hsla(205, 95%, 23%, 0.55);
+        text-align: center;
+        /* Gölgelik eklemek için */
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        border-radius: 8px;
+        background-color: #5c9ca2bb;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+       
+    }
+    .navbar a:hover {
+      background-color: #fcfdfd67;
+      color: rgb(46, 112, 63);
+    
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .navbar li:not(:last-child)::after {
+      content: " | ";
+      font-size: xx-large;
+      color: #575757d7;
+    }
+    .navbar a {
+        color: #07f3cc;
+        text-decoration: none;
+        font-size:xx-large;
+    }
+   /*aa*/
+    #ikinci{
+    color: #fbfbfb;
+    padding: 8px;
+    text-align: center;
+    border: 3px solid hsla(177, 93%, 39%, 0.756);
+    text-align: center;
+    /* Gölgelik eklemek için */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: #cd70d4c6;
+}
+
+.links-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+   
+}
+.links-container a:hover {
+  background-color: #58585844;
+  color: rgb(142, 51, 52);
+}
+
+.links-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links-container li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.links-container li:not(:last-child)::after {
+  content: " | ";
+  font-size: xx-large;
+  color: #575757;
+}
+.links-container a {
+    color: #07b4f3c6;
+    text-decoration: none;
+    font-size:xx-large;
+}
+    
+    </style>
+</head>
+<body>
+    <header id="birinci">
+        <div class="navbar">
+            <ul>
+                <li><a href="ana.html">Ana Sayfa</a></li>
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="kaynakça.html">Kaynakça</a></li>
+                <li><a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </div>
+            <h3>Çok Gezen Mi Çok Okuyan Mı Bilir?</h3> 
+      
+    </header>
+
+    <header id="ikinci">
+        <div class="links-container">
+        <ul>
+            <li><a href="ülke-analizi.html" ><strong>Ülke Analizi</strong></a></li>
+            <li><a href="dünya-tarihi.html" ><strong>Dünya Tarihi</strong></a></li>
+            <li><a href="ekonomi.html" ><strong>Ekonomi</strong></a></li>
+            <li><a href="felsefe.html" ><strong>Felsefe</strong></a></li>
+            <li><a href="psikoloji.html" ><strong>Psikoloji</strong></a></li>
+        </ul>
+        </div>
+    </header>
+    <div id="navbar">
+    <h1>HAKKIMIZDA</h1>
+ <ul>
+   <li><h2>Biz Kimiz?</h2></li>
+     <p>Gelişime açık 2 liseli genç olarak eğitimine başladığımız Insider Code Akademi'nin eğitimini tamamlayıp en son proje yapma aşamasında böyle bir site yapma kararı aldık.</p>
+    <img src="yazılım.jpg" alt="hacker">
+     <li><h2>Amacımız</h2></li>
+
+    <p>2 liseli genç olarak bilginin mühim gezmenin sürdürülebilir olduğu 21.yüzyılda bunları özellikle genç kitlemiz ile paylaşmak ve her türlü bilgiyi özellikle gezme ve okuma alanlarındaki bilgileri yaymak amacıyla buradayız. </p>
+ </ul>
+ <img src="insider.jpeg" alt="insider-şirket">
+    </div>
+</body>
+</html>
